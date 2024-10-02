@@ -1,4 +1,6 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
-
+# Program to print numbers from 2 to 50, counting by twos
+for number in range (2,50,2)
+print (number)

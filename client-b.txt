@@ -1,4 +1,25 @@
 # Client Task B #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+def find_location(start_position, target_position):
+  current_position = start_position
+  directions = ["east", "west", "north", "south"]
 
+  while current_position != target_position:
+    dx = target_position[0] - current_position[0]
+    dy = target_position[1] - current_position[1]
+
+    if dx > 0:
+      current_position[0] += 1
+      print(f"Move {directions[0]}")
+    elif dx < 0:
+      current_position[0] -= 1
+      print(f"Move {directions[1]}")
+    elif dy > 0:
+      current_position[1] += 1
+      print(f"Move {directions[2]}")
+    else:
+      current_position[1] -= 1
+      print(f"Move {directions[3]}")
+
+  print("You have reached your destination!")

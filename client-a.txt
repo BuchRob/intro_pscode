@@ -1,4 +1,18 @@
 # Client Task A #
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
+BEGIN
+SET RandomNumber to (1,10)
+SET attempts to 3
+WHILE attempts > 0
+ Print "Guess the number (between 1 and 10)
+  Read playerGuess
+    If playerGuess = RandomNumber 
+  Print "You are amazing!! you guess the correct."
+  Break
+    Else
+  Print "Wrong Guess. Please Try again."
+    If attempts = 0 
+    Print "You've have used all attempts. Correct answer was " RandomNumber
 
+END
